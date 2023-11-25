@@ -21,7 +21,7 @@ const Tittle = styled.h1`
       line-height: 56px;
       letter-spacing: 0em;
       text-align: center;
-      color: #FF9900;
+      color: blue;
   }
 `;
 
@@ -45,7 +45,7 @@ const Paragraph = styled.p`
       line-height: 28px;
       letter-spacing: 0em;
       text-align: center;
-      color: #FF9900;
+      color: blue;
   }
 `;
 
