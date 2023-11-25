@@ -1,26 +1,38 @@
 
-
-
-import "./styles.css"
+import styled from "styled-components";
 
 import image1 from '../../images/image1.svg'
 
 import { Header } from '../Header'
+
+const Wrapper = styled.div`
+    width: 592px;
+    height: 607px;
+    left: 344px;
+    margin: auto;
+`;
+
+const Image = styled.img`
+    width: 348px;
+    height: 223px;
+    left: 474px;
+    margin: auto;
+`;
 
 
 export function Hero() {
     
     return (
 
-      <div id="hero" >
+      <Wrapper >
 
-         <div id="image" >
+         <Image>
             <img src={image1} alt="um homem em um espaço decorado" />
-         </div>
+         </Image>
 
          <Header/>
 
-      </div>
+      </Wrapper>
 
     )   
    
