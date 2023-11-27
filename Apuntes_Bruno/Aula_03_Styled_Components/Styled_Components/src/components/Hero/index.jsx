@@ -25,11 +25,15 @@ export function Hero() {
     return (
     <>
         <Wrapper >
-         <Image>
-           <img src={image1} alt="um homem em um espaço decorado" />
-        </Image>
+
+              <Image>
+                <img src={image1} alt="um homem em um espaço decorado" />
+              </Image>
+
+              <Header/>
+
         </Wrapper>
-        <Header/>
+       
     </>
 
     )   
