@@ -26,14 +26,21 @@ export function Footer() {
 
     return (
 
-       <Foot>
+        <>
+         <Foot>
 
-          <Linea src={line} alt="linha divisora" />
+           <Linea src={line} alt="linha divisora" />
 
-          <Menu/>
+         <Menu/>
 
 
-       </Foot>
+        </Foot>
+        
+        </>
+
+
+
+      
        
     )
        

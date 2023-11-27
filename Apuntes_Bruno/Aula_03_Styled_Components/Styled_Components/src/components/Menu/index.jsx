@@ -1,5 +1,5 @@
 
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.div`
     width: 592px;
@@ -29,11 +29,17 @@ const Link = styled.a`
 export function Menu() {
 
     return (
-    
-       <Wrapper>
+       
+        <>
+        <Wrapper>
             <Link target="_blank" href="">Instagram</Link>
             <Link target="_blank" href="">Fale conosco</Link>
        </Wrapper>
+        
+        </>
+
+    
+       
 
     )
 }

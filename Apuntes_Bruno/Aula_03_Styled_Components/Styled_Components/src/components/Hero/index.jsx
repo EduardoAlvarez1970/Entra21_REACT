@@ -1,5 +1,5 @@
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 import image1 from '../../images/image1.svg'
 
@@ -23,16 +23,14 @@ const Image = styled.img`
 export function Hero() {
     
     return (
-
-      <Wrapper >
-
+    <>
+        <Wrapper >
          <Image>
-            <img src={image1} alt="um homem em um espaço decorado" />
-         </Image>
-
-         <Header/>
-
-      </Wrapper>
+           <img src={image1} alt="um homem em um espaço decorado" />
+        </Image>
+        </Wrapper>
+        <Header/>
+    </>
 
     )   
    

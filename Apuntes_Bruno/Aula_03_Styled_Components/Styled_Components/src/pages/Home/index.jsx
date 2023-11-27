@@ -7,14 +7,9 @@ export function Home() {
     return (
 
         <>
-
            <Hero/>
-           
            <Footer/>
-        
         </>
-
-        
 
     )
 }
