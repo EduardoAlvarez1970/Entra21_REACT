@@ -1,5 +1,5 @@
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
     width: 592px;
@@ -20,12 +20,6 @@ const Link = styled.a`
     color: #FF9900;
 `;
 
-
-
-
-
-
-
 export function Menu() {
 
     return (
@@ -36,10 +30,7 @@ export function Menu() {
             <Link target="_blank" href="">Fale conosco</Link>
        </Wrapper>
         
-        </>
-
-    
-       
+        </> 
 
     )
 }

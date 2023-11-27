@@ -1,5 +1,5 @@
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 import line from '../../images/line1.svg'
 
@@ -31,16 +31,11 @@ export function Footer() {
 
            <Linea src={line} alt="linha divisora" />
 
-         <Menu/>
-
+           <Menu/>
 
         </Foot>
         
-        </>
-
-
-
-      
+        </>  
        
     )
        
