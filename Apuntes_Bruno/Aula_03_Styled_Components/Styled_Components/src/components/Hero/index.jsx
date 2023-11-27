@@ -1,23 +1,10 @@
 
-import styled from 'styled-components';
-
 import image1 from '../../images/image1.svg'
 
 import { Header } from '../Header'
 
-const Wrapper = styled.div`
-    width: 592px;
-    height: 607px;
-    left: 344px;
-    margin: auto;
-`;
-
-const Image = styled.div`
-    width: 348px;
-    height: 223px;
-    left: 474px;
-    margin: auto;
-`;
+import { Image } from './Image.js'
+import { Wrapper } from './Wrapper.js'
 
 
 export function Hero() {
