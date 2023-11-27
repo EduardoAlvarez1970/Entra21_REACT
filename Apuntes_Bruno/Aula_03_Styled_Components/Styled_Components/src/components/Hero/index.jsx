@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     margin: auto;
 `;
 
-const Image = styled.img`
+const Image = styled.div`
     width: 348px;
     height: 223px;
     left: 474px;
