@@ -6,3 +6,10 @@ export const Image = styled.div`
     left: 474px;
     margin: auto;
 `;
+
+export const Wrapper = styled.div`
+    width: 592px;
+    height: 607px;
+    left: 344px;
+    margin: auto;
+`;

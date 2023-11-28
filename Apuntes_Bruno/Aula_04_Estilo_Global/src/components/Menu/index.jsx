@@ -1,6 +1,5 @@
 
-import { Link } from './Link.js'
-import { Wrapper } from './Wrapper.js'
+import { Link, Wrapper } from './styles.js'
 
 export function Menu() {
 
