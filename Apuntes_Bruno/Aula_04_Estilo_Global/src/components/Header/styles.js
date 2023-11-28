@@ -5,7 +5,6 @@ export const Container = styled.div`
     height: 312px;
     top: 295px;
     left: 344px;
-
 `;
 
 export const Paragraph = styled.p`
@@ -52,6 +51,6 @@ span {
   line-height: 56px;
   letter-spacing: 0em;
   text-align: center;
-  color: blue;
+  color: ${({ theme }) => theme.COLORS.AMARILLITO}
 }
 `;

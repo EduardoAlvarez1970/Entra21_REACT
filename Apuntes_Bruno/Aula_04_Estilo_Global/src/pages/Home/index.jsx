@@ -1,4 +1,4 @@
-import "./styles.css"
+/*import "./global.js"*/
 
 import { Hero } from '../../components/Hero'
 import { Footer } from '../../components/Footer'

@@ -5,6 +5,7 @@ export const Image = styled.div`
     height: 223px;
     left: 474px;
     margin: auto;
+    background-color: ${({ theme }) => theme.COLORS.NEWEDU};
 `;
 
 export const Wrapper = styled.div`
@@ -12,4 +13,5 @@ export const Wrapper = styled.div`
     height: 607px;
     left: 344px;
     margin: auto;
+    
 `;

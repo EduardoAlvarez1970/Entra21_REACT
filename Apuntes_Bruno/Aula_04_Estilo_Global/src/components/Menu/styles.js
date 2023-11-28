@@ -17,4 +17,5 @@ export const Wrapper = styled.div`
     top: 659px;
     left: 340px;
     text-decoration: none;
+    
 `;

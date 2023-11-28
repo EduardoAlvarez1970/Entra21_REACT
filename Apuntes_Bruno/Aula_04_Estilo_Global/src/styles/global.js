@@ -1,4 +1,6 @@
+import { createGlobalStyle } from 'styled-components'
 
+export default createGlobalStyle`
 
 * {
     box-sizing: border-box;
@@ -15,7 +17,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     
-    background: #ffffff;
+    /*background: #ffffff;*/
+
+    background-color: ${({ theme }) => theme.COLORS.VERDECITO};
+    color: ${({ theme }) => theme.COLORS.WHITE};
 }
 
 #root {
@@ -27,4 +32,8 @@ body {
     padding: 64px, 0px, 0px, 0px;
     background: #FFFFFF; 
 }
+
+`
+
+
 
