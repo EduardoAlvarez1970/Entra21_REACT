@@ -3,8 +3,7 @@ import image1 from '../../images/image1.svg'
 
 import { Header } from '../Header'
 
-import { Image } from './Image.js'
-import { Wrapper } from './Wrapper.js'
+import { Image, Wrapper } from './styles.js'
 
 
 export function Hero() {
