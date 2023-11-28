@@ -9,7 +9,7 @@ export function Menu() {
         <Wrapper>
             <Link target="_blank" href="">Instagram</Link>
             <Link target="_blank" href="">Fale conosco</Link>
-        </Wrapper>
+       </Wrapper>
         
         </> 
 
