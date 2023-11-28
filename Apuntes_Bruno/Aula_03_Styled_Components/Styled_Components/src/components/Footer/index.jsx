@@ -3,7 +3,8 @@ import line from '../../images/line1.svg'
 
 import { Menu } from '../Menu'
 
-import { Linea, Foot } from './styles.js'
+import { Linea } from './Linea.js'
+import { Foot } from './Foot.js'
 
 
 export function Footer() {

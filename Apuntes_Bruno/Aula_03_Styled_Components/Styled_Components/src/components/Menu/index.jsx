@@ -1,5 +1,6 @@
 
-import { Link, Wrapper } from './styles.js'
+import { Link } from './Link.js'
+import { Wrapper } from './Wrapper.js'
 
 export function Menu() {
 
@@ -9,7 +10,7 @@ export function Menu() {
         <Wrapper>
             <Link target="_blank" href="">Instagram</Link>
             <Link target="_blank" href="">Fale conosco</Link>
-       </Wrapper>
+        </Wrapper>
         
         </> 
 

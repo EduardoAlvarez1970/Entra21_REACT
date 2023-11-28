@@ -1,5 +1,8 @@
 
-import { Container, Paragraph, Tittle } from './styles.js'
+import { Container } from './Container.js'
+import { Paragraph } from './Paragraph.js'
+import { Tittle } from './Tittle.js'
+
 
 export function Header() {
 
