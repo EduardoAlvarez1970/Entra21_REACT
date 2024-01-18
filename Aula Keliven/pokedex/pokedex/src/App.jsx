@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 
+import './App.css'
+
 
 function App() {
 
@@ -8,7 +10,8 @@ function App() {
 
   const fetchData = async () => {
     try{
-      const resposta = await fetch (`http:/pokeapi.co/api/v2/pokemon/${id}`);
+      const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+
       const dados = await resposta.json();
       setPokemon(dados);
     } catch(error) {
@@ -25,9 +28,25 @@ function App() {
   }
 
   return (
-    
-   
+    <div className="app-container">
+      {pokemon && (
+        <div style={{ textAlign: 'center', marginTop: '50px' }}>        
+        <h1>Pokedex</h1>
+        <p>{pokemon.name}</p>
+        <img src={pokemon.sprites.front_default} alt="" />
+        <button onClick={proximo}>Proximo Pokemon</button>
+        </div>
+        )
+    }
+    </div>
   )
+
+ 
+
+
+
+
+
 }
 
 export default App
