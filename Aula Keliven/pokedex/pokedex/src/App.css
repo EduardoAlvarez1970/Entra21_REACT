@@ -13,3 +13,8 @@ body {
 .app-container {
   text-align: center;
 }
+
+.app-container img {
+  display: block;
+  margin: auto;
+}

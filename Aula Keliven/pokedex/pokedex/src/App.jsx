@@ -26,6 +26,9 @@ function App() {
   const proximo = () => {
     setId(id +1);
   }
+  const anterior = () => {
+    setId(id -1);
+  }
 
   return (
     <div className="app-container">
@@ -34,14 +37,14 @@ function App() {
         <h1>Pokedex</h1>
         <p>{pokemon.name}</p>
         <img src={pokemon.sprites.front_default} alt="" />
-        <button onClick={proximo}>Proximo Pokemon</button>
+        <button onClick={anterior}>Anterior</button>
+        <button onClick={proximo}>Proximo</button>
         </div>
         )
     }
     </div>
   )
 
- 
 
 
 
