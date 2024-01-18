@@ -26,7 +26,7 @@ function App() {
     }}>
 
 
-      <button onClick={() => setQuadrado(!quadrado)}>Alterars</button>
+      <button onClick={() => setQuadrado(!quadrado)}>Alterar</button>
 
       <animated.div
       style={{
