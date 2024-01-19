@@ -1,5 +1,6 @@
 
-import React, { useEffect, useState, useReducer, useCallback } from 'react'
+import React, { useEffect, useState, useReducer, useCallback } from 'react';
+import { dispatch } from 'react-redux';
 
 
 import './App.css'
@@ -14,6 +15,9 @@ const tarefaReducer = (estado, acao) => {
       return atualizarTarefa;
     case 'DELETE':
       return estado.filter((_, index) => index !== acao.playload);
+
+    default:
+      return estado;  
   }
 }
 
@@ -28,7 +32,7 @@ function App() {
 
   // salvando as tarefas no armazento locaçstorage
   useEffect(() => {
-    localStorage.setItem('listaTarefas', JSON.stringify(listatarefas));
+    localStorage.setItem('listaTarefas', JSON.stringify(listaTarefas));
   }, [listaTarefas]);
 
    // carregando as tarefas no armazento locaçstorage
@@ -37,38 +41,44 @@ function App() {
    }
    )
 
-  const adicionar = useCallback((index) => {
+  const adicionar = useCallback(() => {
 
     if(novaTarefa.trim() !== '')
-    false}){
-      dispatch({type: })
+    {
+      dispatch({type: 'ADD_TASK', playload : { text: novaTarefa, completed: false} });
+      setNovaTarefa('');
     }
-
-  })
-
-
-
-
+  },[novaTarefa, dispatch] )
+ 
 
   
   return (
-    <>
+    
       <div>
         <h1>Lista de Tarefas</h1>
 
         <div>
           <input
            type="text"
-           placeholder="Nova tarefa" />
-
-          <button>Adicionar</button>
-
+           placeholder="Nova tarefa"
+           value={novaTarefa}
+           onChange={(e) => setNovaTarefa(e.target.value)}
+        />
+          <button onClick={adicionar}>Adicionar</button>
+        </div>
+        <div>
+          <ul>
+            {listaTarefas.map((tarefa, index) => (
+              <li key ={index}>
+                <p style = {{textDecoration: tarefa.completed ? line-through: "none"}}></p>
+              </li>
+            ))}
+          </ul>
         </div>
         
         
       </div>
       
-    </>
   )
 }
 
