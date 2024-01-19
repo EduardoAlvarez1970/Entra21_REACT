@@ -6,15 +6,16 @@ import './App.css'
 
 const tarefaReducer = (estado, acao) => {
 
-  
-
-
+  switch(acao.type) {
+    case 'ADD_TASK':
+      return[...estado, acao.playload];
+    case 'COMPLETED':
+      atualizarTarefa[acao.playload].completed = true;
+      return atualizarTarefa;
+    case 'DELETE':
+      return estado.filter((_, index) => index !== acao.playload);
+  }
 }
-
-
-
-
-
 
 
 
@@ -23,7 +24,31 @@ function App() {
   const [novaTarefa, setNovaTarefa] = useState('');
 
   // criando o estado da lista de tarefas como reducer
-  const [listaTarefas, setListatarefas] = useReducer()
+  const [listaTarefas, setListatarefas] = useReducer(tarefaReducer, []);
+
+  // salvando as tarefas no armazento locaçstorage
+  useEffect(() => {
+    localStorage.setItem('listaTarefas', JSON.stringify(listatarefas));
+  }, [listaTarefas]);
+
+   // carregando as tarefas no armazento locaçstorage
+   useEffect(() => {
+    const tarefasArmazenadas = JSON.parse(localStorage.getItem('listaTarefas'))
+   }
+   )
+
+  const adicionar = useCallback((index) => {
+
+    if(novaTarefa.trim() !== '')
+    false}){
+      dispatch({type: })
+    }
+
+  })
+
+
+
+
 
   
   return (
